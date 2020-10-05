@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<header id="header" class="header">
+    <div class="container">
+        <h1 class="logo float-left">
+            <a class="scrollto " href="#promo">
+                <span class="logo-title">Predictor</span>
+            </a>
+        </h1><!--//logo-->
+        <nav id="main-nav" class="main-nav navbar-expand-md float-right" role="navigation">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button><!--//nav-toggle-->
+
+            <div class="navbar-collapse collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item sr-only"><a class="nav-link scrollto" href="#promo">Home</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#predict">Predict</a></li>
+                    <li class="nav-item last"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul><!--//nav-->
+            </div><!--//navabr-collapse-->
+        </nav><!--//main-nav-->
+    </div>
+</header><!--//header-->
+{% endblock %}
+
+{% block body %}
+
+<!-- ******PROMO****** -->
+<section id="promo" class="promo section offset-header">
+ <div class="container text-center">
+  <h2 class="title">Sentiment <span class="highlight">Analysis</span></h2>
+  <p class="intro">A simple natural language processing project that can predict the sentiment of film reviews.</p>
+  <div class="btns">
+   <a class="btn btn-cta-secondary scrollto" href="#predict">Predict Now</a>
+  </div>
+  <ul class="meta list-inline">
+  </ul><!--//meta-->
+ </div><!--//container-->
+ <div class="social-media">
+  <div class="social-media-inner container text-center">
+   <ul class="list-inline mb-2">
+    <li class="list-inline-item github-star">
+     <a class="github-button" href="https://github.com/wilsongibbs/review-nlp" data-icon="octicon-star" aria-label="view source code on Github">Code</a></li>
+    <li class="list-inline-item github-follow"><!-- Place this tag where you want the button to render. -->
+     <a class="github-button" href="https://github.com/wilsongibbs" aria-label="Follow @wilsongibbs on GitHub">Follow @wilsongibbs</a></li>
+    <li class="list-inline-item github-star">
+     <a href="https://www.rottentomatoes.com/m/tenet/reviews?type=verified_audience" target="_blank"><img src="https://img.shields.io/badge/-Find%20some%20review-e34f26?style=flat-square&logo=apple&logoColor=fff" style="padding-bottom: 12px;"></a></li>   
+   </ul>
+  </div>
+ </div>
+</section><!--//promo-->
+
+<!-- ******ABOUT****** -->
+<section id="about" class="about section">
+ <div class="container">
+  <h2 class="title text-center">How it works?</h2>
+  <p class="intro text-center">This predictor is built by Python using the LSTM neural network. You can you Jupyter Notebook to creat the mode and evaluate the accuracy. For this project, the best accuracy I got is 87.36%, if you want to reach higher accuracy, you may need more computing resource. After generating the model, it is a good choice to use Flask to deploy the project on a server as a web application.</p>
+ </div><!--//container-->
+</section><!--//about-->
+
+<!-- ******PREDICT****** -->
+<section id="predict" class="predict section">
+ <div class="container">
+  <div class="predict-inner">
+   <h2 class="title text-center">Enter Film Review Here</h2>
+   <br>
+   <form action="/result" method="post" class="form-horizontal">
+    <div class="form-group">
+     <div class="col-sm-12">
+      <textarea class="form-control" name="text" rows="10"></textarea>
+     </div>
+    </div>
+    <div class="cta-container">
+        <div class="btn-container  text-center">
+            <input class="btn btn-cta-secondary" type=submit value="Predict Now">
+        </div><!--//btn-container-->
+    </div><!--//cta-container-->
+   </form>
+   
+  </div><!--//predict-inner-->
+ </div><!--//container-->
+</section><!--//how-->
+
+<!-- ******CONTACT****** -->
+<section id="contact" class="contact section has-pattern">
+ <div class="container">
+  <div class="contact-inner">
+   <h2 class="title  text-center">Contact</h2>
+   <p class="intro  text-center">I hope you enjoy this project. <br />Feel free to get in touch if you have any questions or suggestions.</p>
+   <div class="clearfix"></div>
+   <div class="info text-center">
+    <ul class="social-icons list-inline">
+        <li class="list-inline-item"><a href="https://github.com/wilsongibbs" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li class="list-inline-item last"><a href="mailto:wilsongibbs.com@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+    </ul>
+   </div><!--//info-->
+  </div><!--//contact-inner-->
+ </div><!--//container-->
+</section><!--//contact-->
+{% endblock %}
