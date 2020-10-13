@@ -14,11 +14,11 @@ Then use your brower to play with it. You can test whatever film review you like
 
 ### Screenshots
 
-![img1](img1.jpg)
+![img1](resources/img1.jpg)
 
-![img2](img2.jpg)
+![img2](resources/img2.jpg)
 
-![img3](img3.jpg)
+![img3](resources/img3.jpg)
 
 # How it works
 
@@ -26,7 +26,7 @@ This predictor is built by Python using the LSTM neural network. You can you Jup
 
 ## Structure of the model
 
-![img4](img4.jpg)
+![img4](resources/img4.jpg)
 
 # Thanks
 
