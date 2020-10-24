@@ -28,6 +28,14 @@ This predictor is built by Python using the LSTM neural network. You can you Jup
 
 ![img4](resources/img4.jpg)
 
+# Download Resouces
+
+You can download models, embeding, and training data here:
+
+* Link: [Download](https://1drv.ms/u/s!AqMUlRKFxCHNhOhOfA1MTQdOXYqQOw?e=FRAdYa)
+
+* Password: nlpresource
+
 # Thanks
 
 * Using bootstrap theme designed by [Xiaoying Riley](https://themes.3rdwavemedia.com/)
